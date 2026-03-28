@@ -6,7 +6,7 @@ COPY backend/requirements.txt .
 COPY frontend/package*.json .
 
 RUN pip install -r requirements.txt
-RUN npm install
+RUN apt-get update && apt-get install -y npm && npm install
 
 COPY . .
 

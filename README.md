@@ -29,6 +29,7 @@ This app helps students study by summarizing notes and generating quiz questions
 Week 11: Setup + proposal  
 Week 12: Core features + AI  
 Week 13: Deployment + CI/CD  
+<<<<<<< HEAD
 
 ## Table of Contents
 A few pages were cut to reduce the size, refer to content no. 8 for the original repository.

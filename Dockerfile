@@ -2,10 +2,12 @@ FROM python:3.10
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY backend/requirements.txt .
+COPY frontend/package*.json .
 
 RUN pip install -r requirements.txt
+RUN npm install
 
 COPY . .
 
-CMD ["python", "app.py"]
+CMD ["npm", "start"]

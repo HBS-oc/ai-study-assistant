@@ -1,14 +1,10 @@
 from flask import Flask
+from routes.main_routes import main
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "AI Study Assistant Running"
-
-@app.route("/health")
-def health():
-    return {"status": "ok"}
+# Register routes
+app.register_blueprint(main)
 
 if __name__ == "__main__":
     app.run(debug=True)

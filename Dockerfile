@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.11-nodejs20
+FROM python:3.14.3-trixie
 
 WORKDIR /app
 

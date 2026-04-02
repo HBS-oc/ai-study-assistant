@@ -123,6 +123,13 @@ npm install
 npm start
 ```
 
+### Dockerfile
+
+```
+docker build . -t ai-study-assistant`
+docker run -it -p 3000:3000 -p 8000:8000 ai-study-assistant
+```
+
 ---
 
 ## Usage Guide
